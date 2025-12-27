@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,14 @@
             --light: #f8f9fa;
             --dark: #212529;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             color: var(--dark);
         }
-        
+
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -27,21 +28,21 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
@@ -50,34 +51,35 @@
         }
 
         .logo-img {
-            height: 65px; /* Adjust for logo image */
+            height: 65px;
+            /* Adjust for logo image */
             width: auto;
         }
-        
+
         .logo span {
             color: var(--accent);
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
             margin-left: 1.5rem;
         }
-        
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         nav ul li a:hover {
             color: var(--accent);
         }
-        
+
         .hero {
             background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
             background-size: cover;
@@ -86,7 +88,7 @@
             align-items: center;
             position: relative;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -94,27 +96,27 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 1;
             color: white;
             max-width: 600px;
         }
-        
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             line-height: 1.6;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 0.8rem 1.5rem;
@@ -127,126 +129,126 @@
             border: none;
             cursor: pointer;
         }
-        
+
         .btn:hover {
             background-color: #e65c00;
             transform: translateY(-2px);
         }
-        
+
         .btn-outline {
             background-color: transparent;
             border: 2px solid white;
             margin-left: 1rem;
         }
-        
+
         .btn-outline:hover {
             background-color: white;
             color: var(--primary);
         }
-        
+
         .services {
             padding: 5rem 0;
             background-color: var(--light);
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             color: var(--secondary);
             margin-bottom: 1rem;
         }
-        
+
         .section-title p {
             color: #666;
             max-width: 700px;
             margin: 0 auto;
             font-size: 1.1rem;
         }
-        
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .service-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .service-img {
             height: 200px;
             overflow: hidden;
         }
-        
+
         .service-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        
+
         .service-card:hover .service-img img {
             transform: scale(1.1);
         }
-        
+
         .service-content {
             padding: 1.5rem;
         }
-        
+
         .service-content h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
             color: var(--secondary);
         }
-        
+
         .service-content p {
             color: #666;
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-        
+
         .products {
             padding: 5rem 0;
         }
-        
+
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .product-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .product-img {
             height: 200px;
             overflow: hidden;
             position: relative;
         }
-        
+
         .product-img img {
             width: 100%;
             height: 100%;
@@ -254,7 +256,7 @@
             padding: 1rem;
             background-color: #f8f8f8;
         }
-        
+
         .product-badge {
             position: absolute;
             top: 10px;
@@ -266,116 +268,116 @@
             font-size: 0.8rem;
             font-weight: bold;
         }
-        
+
         .product-content {
             padding: 1.5rem;
         }
-        
+
         .product-content h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .product-price {
             font-size: 1.3rem;
             font-weight: bold;
             color: var(--primary);
             margin-bottom: 1rem;
         }
-        
+
         .product-price span {
             font-size: 1rem;
             color: #666;
             text-decoration: line-through;
             margin-left: 0.5rem;
         }
-        
+
         .about {
             padding: 5rem 0;
             background-color: var(--secondary);
             color: white;
         }
-        
+
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
         }
-        
+
         .about-img {
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .about-img img {
             width: 100%;
             height: auto;
             display: block;
         }
-        
+
         .about-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .about-text p {
             margin-bottom: 1.5rem;
             line-height: 1.8;
             font-size: 1.1rem;
         }
-        
+
         .stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
         .stat-item {
             text-align: center;
         }
-        
+
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
             color: var(--accent);
             margin-bottom: 0.5rem;
         }
-        
+
         .stat-label {
             font-size: 1rem;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
         }
-        
+
         .contact {
             padding: 5rem 0;
         }
-        
+
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
         }
-        
+
         .contact-info h3 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
             color: var(--secondary);
         }
-        
+
         .contact-details {
             margin-bottom: 2rem;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-        
+
         .contact-icon {
             margin-right: 1rem;
             color: var(--accent);
@@ -386,7 +388,7 @@
         .contact-item span {
             flex: 1;
         }
-        
+
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -396,29 +398,29 @@
             border-radius: 4px;
             font-family: inherit;
         }
-        
+
         .contact-form textarea {
             height: 150px;
             resize: vertical;
         }
-        
+
         .faq {
             padding: 5rem 0;
             background-color: var(--light);
         }
-        
+
         .accordion {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .accordion-item {
             margin-bottom: 1rem;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .accordion-header {
             background-color: white;
             padding: 1.5rem;
@@ -429,21 +431,21 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
-        
+
         .accordion-header:hover {
             background-color: #f0f0f0;
         }
-        
+
         .accordion-header::after {
             content: '+';
             font-size: 1.5rem;
             transition: all 0.3s ease;
         }
-        
+
         .accordion-header.active::after {
             content: '-';
         }
-        
+
         .accordion-content {
             background-color: white;
             padding: 0 1.5rem;
@@ -451,32 +453,32 @@
             overflow: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .accordion-content.show {
             padding: 1.5rem;
             max-height: 500px;
         }
-        
+
         footer {
             background-color: var(--secondary);
             color: white;
             padding: 3rem 0 1rem;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-bottom: 2rem;
         }
-        
+
         .footer-column h3 {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
             position: relative;
             padding-bottom: 0.5rem;
         }
-        
+
         .footer-column h3::after {
             content: '';
             position: absolute;
@@ -486,85 +488,86 @@
             height: 2px;
             background-color: var(--accent);
         }
-        
+
         .footer-column ul {
             list-style: none;
             padding: 0;
         }
-        
+
         .footer-column ul li {
             margin-bottom: 0.8rem;
         }
-        
+
         .footer-column ul li a {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: all 0.3s ease;
         }
-        
+
         .footer-column ul li a:hover {
             color: white;
             padding-left: 5px;
         }
-        
+
         .social-links {
             display: flex;
             gap: 1rem;
         }
-        
+
         .social-links a {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 40px;
             height: 40px;
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             color: white;
             transition: all 0.3s ease;
         }
-        
+
         .social-links a:hover {
             background-color: var(--accent);
             transform: translateY(-3px);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
         }
-        
+
         /* Mobile Menu */
         .menu-toggle {
             display: none;
             cursor: pointer;
             font-size: 1.5rem;
         }
-        
+
         /* Responsive Styles */
         @media (max-width: 992px) {
+
             .about-content,
             .contact-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .about-img {
                 order: -1;
             }
-            
+
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
-            
+
             nav {
                 position: fixed;
                 top: 70px;
@@ -575,75 +578,365 @@
                 transition: all 0.3s ease;
                 z-index: 99;
             }
-            
+
             nav.active {
                 left: 0;
             }
-            
+
             nav ul {
                 flex-direction: column;
                 padding: 2rem;
             }
-            
+
             nav ul li {
                 margin: 1rem 0;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero-buttons {
                 display: flex;
                 flex-direction: column;
             }
-            
+
             .btn-outline {
                 margin-left: 0;
                 margin-top: 1rem;
             }
-            
+
             .stats {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         @media (max-width: 576px) {
+
             .services-grid,
             .products-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* Animation */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
+
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
-        
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
-        .delay-4 { animation-delay: 0.8s; }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.8s;
+        }
+
+        /* --- Navbar Dropdown Styles --- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: var(--dark);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: var(--light);
+            color: var(--primary);
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Specific tweak for this navbar structure */
+        nav ul li.dropdown {
+            cursor: pointer;
+        }
+
+        /* Ensure link color inside dropdown overrides default white nav color */
+        nav ul li .dropdown-content a {
+            color: #333;
+        }
+
+        nav ul li .dropdown-content a:hover {
+            color: var(--accent);
+            padding-left: 20px;
+        }
+
+        /* Responsive Dropdown */
+        @media (max-width: 768px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                /* Hidden by default */
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow: none;
+                width: 100%;
+                padding-left: 1rem;
+            }
+
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content a {
+                color: white;
+                padding: 10px;
+            }
+
+            nav ul li .dropdown-content a {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        /* --- New Styles for Features --- */
+        .filter-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        #category-filter {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            cursor: pointer;
+            outline: none;
+            min-width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-actions {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-email {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #666;
+            z-index: 10;
+        }
+
+        .close-modal:hover {
+            color: var(--accent);
+        }
+
+        .modal-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .main-image-container {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .main-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .thumbnails {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            opacity: 0.7;
+            transition: all 0.2s;
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--primary);
+            opacity: 1;
+        }
+
+        .modal-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-details h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .modal-category {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .modal-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-description {
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .main-image-container {
+                height: 250px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-        <div class="header-content">
-            <div class="logo">
-                <img src="Logo.png" alt="MaxTech Solutions " class="logo-img">
-                <!-- Max<span>Tech</span> Solutions -->
-            </div>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="Logo.png" alt="MaxTech Solutions " class="logo-img">
+                    </a>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -651,7 +944,19 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#products">Products</a></li>
+                        <li class="dropdown">
+                            <a href="#products">Products <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="javascript:void(0)" onclick="applyFilter('all')">All Products</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('laptops')">Laptops</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('phones')">Smartphones</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('earpods')">EarPods</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('chargers')">Chargers</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('cables')">Data Cables</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('watches')">Smartwatches</a>
+                                <a href="javascript:void(0)" onclick="applyFilter('accessories')">Accessories</a>
+                            </div>
+                        </li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -664,7 +969,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="fade-in">Your Complete Tech Solution Provider</h1>
-                <p class="fade-in delay-1">Expert repairs, quality products, and exceptional service for all your computer and phone needs. We fix what others can't!</p>
+                <p class="fade-in delay-1">Expert repairs, quality products, and exceptional service for all your
+                    computer and phone needs. We fix what others can't!</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn fade-in delay-2">Get Help Now</a>
                     <a href="#services" class="btn btn-outline fade-in delay-3">Our Services</a>
@@ -677,7 +983,8 @@
         <div class="container">
             <div class="section-title">
                 <h2>Our Expert Services</h2>
-                <p>Comprehensive solutions for all your tech problems. Fast, reliable, and affordable services you can trust.</p>
+                <p>Comprehensive solutions for all your tech problems. Fast, reliable, and affordable services you can
+                    trust.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card fade-in">
@@ -686,29 +993,32 @@
                     </div>
                     <div class="service-content">
                         <h3>Computer Repair</h3>
-                        <p>From hardware failures to software crashes, we diagnose and fix all computer issues with precision and care.</p>
+                        <p>From hardware failures to software crashes, we diagnose and fix all computer issues with
+                            precision and care.</p>
                         <a href="#contact" class="btn">Get Service</a>
                     </div>
                 </div>
-                
+
                 <div class="service-card fade-in delay-1">
                     <div class="service-img">
                         <img src="phone-Repair.jpg" alt="Phone Repair">
                     </div>
                     <div class="service-content">
                         <h3>Phone Repair</h3>
-                        <p>Broken screens, battery issues, water damage - we handle all smartphone repairs with OEM-quality parts.</p>
+                        <p>Broken screens, battery issues, water damage - we handle all smartphone repairs with
+                            OEM-quality parts.</p>
                         <a href="#contact" class="btn">Get Service</a>
                     </div>
                 </div>
-                
+
                 <div class="service-card fade-in delay-2">
                     <div class="service-img">
                         <img src="tech-support.jpg" alt="Tech Support">
                     </div>
                     <div class="service-content">
                         <h3>Tech Support</h3>
-                        <p>8AM-19:00PM technical assistance for all your devices. Remote support available for software and setup issues.</p>
+                        <p>8AM-19:00PM technical assistance for all your devices. Remote support available for software
+                            and setup issues.</p>
                         <a href="#contact" class="btn">Get Support</a>
                     </div>
                 </div>
@@ -720,10 +1030,158 @@
         <div class="container">
             <div class="section-title">
                 <h2>Featured Products</h2>
-                <p>Quality electronics and accessories at competitive prices. All products come with warranty and support.</p>
+                <p>Quality electronics and accessories at competitive prices. All products come with warranty and
+                    support.</p>
             </div>
+
+            <!-- Filter moved to Navbar -->
+
             <div class="products-grid">
-                <div class="product-card fade-in">
+
+                <!-- BW74 Earbuds -->
+                <div class="product-card fade-in delay-2" data-category="earpods" onclick="openProductModal(this)"
+                    data-title="BW74 Wireless Earbuds" data-price="R350"
+                    data-desc="BWOO Half-In-Ear Wireless Earbuds. High fidelity sound, long battery life."
+                    data-images='["BW74.jpg", "BW742.jpg", "BW743.jpg", "BW744.jpg", "BW745.jpg"]'>
+                    <div class="product-img">
+                        <img src="BW74.jpg" alt="EarPods">
+                        <span class="product-badge">New Sale</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>BW74 Earbuds</h3>
+                        <p>BWOO Half-In-Ear Wireless Earbuds</p>
+                        <div class="product-price">R350 <span>R450</span></div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('BW74 Earbuds')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BW50 Earbuds -->
+                <div class="product-card fade-in delay-2" data-category="earpods" onclick="openProductModal(this)"
+                    data-title="BW50 Wireless Earbuds" data-price="R300"
+                    data-desc="BWOO Half-In-Ear Wireless Earbuds with Digital Display BT 5.1"
+                    data-images='["BW50.jpg", "BW502.jpg", "BW503.jpg", "BW504.jpg"]'>
+                    <div class="product-img">
+                        <img src="BW50.jpg" alt="EarPods">
+                        <span class="product-badge">New Sale</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>BW50 Earbuds</h3>
+                        <p>BWOO Half-In-Ear Wireless Earbuds with Digital Display BT 5.1</p>
+                        <div class="product-price">R300 <span>R350</span></div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('BW50 Earbuds')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Data Cable -->
+                <div class="product-card fade-in" data-category="cables" onclick="openProductModal(this)"
+                    data-title="USB-C to Lightning Cable" data-price="R80"
+                    data-desc="Durable braided cable, 1m length. Fast charging supported."
+                    data-images='["TC.jpg", "TC2.jpg", "TC3.jpg", "TC4.jpg"]'>
+                    <div class="product-img">
+                        <img src="TC.jpg" alt="Cable">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Data Cable</h3>
+                        <p>USB-C to Lightning, 1m</p>
+                        <div class="product-price">R80</div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('Data Cable')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Phone cases -->
+                <div class="product-card fade-in" data-category="accessories" onclick="openProductModal(this)"
+                    data-title="MagSafe Case for iPhones - All models" data-price="R150"
+                    data-desc="MagSafe Case for iPhones"
+                    data-images='["ipc.jpg", "ipc2.jpg", "ipc3.jpg", "ipc4.jpg", "ipc5.jpg"]'>
+                    <div class="product-img">
+                        <img src="ipc.jpg" alt="Cable">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>MagSafe Case for iPhones</h3>
+                        <p>MagSafe Case for iPhones</p>
+                        <div class="product-price">R150</div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('MagSafe Case for iPhones')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Screen protectors -->
+                <div class="product-card fade-in" data-category="accessories" onclick="openProductModal(this)"
+                    data-title="Screen Protectors for all models - privacy and normal" data-price="R120"
+                    data-desc="Screen Protectors for all models"
+                    data-images='["pt.png", "pt2.jpg", "pt1.jpg", "pt3.jpg"]'>
+                    <div class="product-img">
+                        <img src="pt.png" alt="Cable">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Screen Protectors for all models</h3>
+                        <p>Screen Protectors for all models</p>
+                        <div class="product-price">R120 <span>R150</span></div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('Screen Protectors for all models')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Camera protector-->
+                <div class="product-card fade-in" data-category="accessories" onclick="openProductModal(this)"
+                    data-title="iPhone Camera Protectors from 11 - 17 pro max" data-price="R120"
+                    data-desc="iPhone Camera Protectors" data-images='["cp.jpg", "cp2.jpg"]'>
+                    <div class="product-img">
+                        <img src="cp.jpg" alt="Cable">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Camera Protector</h3>
+                        <p>iPhone Camera Protectors</p>
+                        <div class="product-price">R120 <span>R150</span></div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('Camera Protector')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Charger -->
+                <div class="product-card fade-in" data-category="chargers" onclick="openProductModal(this)"
+                    data-title="20W Fast Laptop Charger" data-price="R250"
+                    data-desc="High speed USB-C PD Charger suitable for laptops." data-images='["LAPC.jpg"]'>
+                    <div class="product-img">
+                        <img src="LAPC.jpg" alt="Charger">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>20W Fast Charger</h3>
+                        <p>USB-C Power Adapter</p>
+                        <div class="product-price">R250</div>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('20W Fast Charger')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Laptop -->
+                <div class="product-card fade-in" data-category="laptops" onclick="openProductModal(this)"
+                    data-title="HP ProBook 450 G8" data-price="R6,000"
+                    data-desc="Core i3 8GB RAM 256GB SSD Win 11 Pro. Excellent condition business laptop."
+                    data-images='["HP-ProBook-450-G8.png", "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"]'>
                     <div class="product-img">
                         <img src="HP-ProBook-450-G8.png" alt="Laptop">
                         <span class="product-badge">Pre-Owned</span>
@@ -732,60 +1190,97 @@
                         <h3>HP ProBook 450 G8</h3>
                         <p>Core i3 8GB RAM 256GB SSD Win 11 Pro</p>
                         <div class="product-price">R6,000 <span>R7,000</span></div>
-                        <a href="#contact" class="btn">Inquire Now</a>
+                        <button class="btn btn-whatsapp w-100"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('HP ProBook 450 G8')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
                     </div>
                 </div>
-                
-                <div class="product-card fade-in delay-1">
+
+                <!-- iPhone -->
+                <div class="product-card fade-in delay-1" data-category="phones" onclick="openProductModal(this)"
+                    data-title="iPhone 13 Pro" data-price="R9,500"
+                    data-desc="128GB, Unlocked, All Colors Available. Battery health 90%+. Includes original cable."
+                    data-images='["https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"]'>
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="iPhone">
+                        <img src="https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="iPhone">
                         <span class="product-badge">Pre-Owned</span>
                     </div>
                     <div class="product-content">
                         <h3>iPhone 13 Pro</h3>
                         <p>128GB, Unlocked, All Colors Available</p>
                         <div class="product-price">R9,500 <span>R10,700</span></div>
-                        <a href="#contact" class="btn">Inquire Now</a>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('iPhone 13 Pro')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
                     </div>
                 </div>
-                
-                <div class="product-card fade-in delay-2">
-                    <div class="product-img">
-                        <img src="apple-airpods-pro.jpg" alt="Smartwatch">
-                        <span class="product-badge">New Sale</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>AirPods Pro 2 </h3>
-                        <p>Pro‑level Active Noise Cancellation.</p>
-                        <div class="product-price">R800 <span>R1,100</span></div>
-                        <a href="#contact" class="btn">Inquire Now</a>
-                    </div>
-                </div>
-                
-                <div class="product-card fade-in delay-3">
+
+                <!-- Accessories -->
+                <div class="product-card fade-in delay-3" data-category="accessories" onclick="openProductModal(this)"
+                    data-title="Premium Tech Accessories" data-price="From R50"
+                    data-desc="Cases, screen protectors, cleaning kits, and more for all your devices."
+                    data-images='["accessories.jpg"]'>
                     <div class="product-img">
                         <img src="accessories.jpg" alt="Accessories">
                         <span class="product-badge">New</span>
                     </div>
                     <div class="product-content">
-                        <h3>Premium Tech Accessories</h3>
+                        <h3>Tech Accessories</h3>
                         <p>Cases, chargers, cables, and more</p>
                         <div class="product-price">From R50</div>
-                        <a href="#contact" class="btn">Inquire Now</a>
+                        <button class="btn btn-whatsapp"
+                            onclick="event.stopPropagation(); orderOnWhatsapp('Tech Accessories')">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-gallery">
+                <div class="main-image-container">
+                    <img src="" alt="Product Image" class="main-image" id="modalMainImage">
+                </div>
+                <div class="thumbnails" id="modalThumbnails">
+                    <!-- Thumbnails injected by JS -->
+                </div>
+            </div>
+            <div class="modal-details">
+                <h2 id="modalTitle">Product Title</h2>
+                <div class="modal-category" id="modalCategory">Category</div>
+                <div class="modal-price" id="modalPrice">R0.00</div>
+                <div class="modal-description" id="modalDesc">
+                    Description goes here.
+                </div>
+                <button class="btn btn-whatsapp" id="modalWhatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
 
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>Why Choose MaxTech Solutions?</h2>
-                    <p>Founded in 2013, MaxTech Solutions has grown from a small repair shop to the area's most trusted technology service provider. Our certified technicians have over 13+ years of combined experience solving every tech problem imaginable.</p>
-                    <p>We pride ourselves on honest diagnostics, transparent pricing, and workmanship that stands the test of time. Whether it's a simple software issue or complex hardware repair, we treat your devices with the care we'd give our own.</p>
-                    
+                    <p>Founded in 2013, MaxTech Solutions has grown from a small repair shop to the area's most trusted
+                        technology service provider. Our certified technicians have over 13+ years of combined
+                        experience solving every tech problem imaginable.</p>
+                    <p>We pride ourselves on honest diagnostics, transparent pricing, and workmanship that stands the
+                        test of time. Whether it's a simple software issue or complex hardware repair, we treat your
+                        devices with the care we'd give our own.</p>
+
                     <div class="stats">
                         <div class="stat-item">
                             <div class="stat-number">5,000+</div>
@@ -802,12 +1297,13 @@
                     </div>
                 </div>
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Our Team">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Our Team">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
@@ -817,6 +1313,16 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/27684810116" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                        <a href="mailto:customersmax@gmail.com" class="btn btn-email">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </a>
+                    </div>
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-phone-alt contact-icon"></i>
@@ -845,9 +1351,11 @@
                 <div class="contact-form">
                     <form id="contact-form" name="contact" action="https://formspree.io/f/mqkrprvk" method="post">
                         <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email"
+                            required>
                         <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
-                        <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Your Message"
+                            required></textarea>
                         <button id="submit" type="submit" name="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -867,43 +1375,50 @@
                         How long does a typical repair take?
                     </div>
                     <div class="accordion-content">
-                        <p>Most common repairs like screen replacements or software issues are completed within 2-4 hours. More complex hardware repairs may take 24-48 hours. We offer same-day service for many repairs when you bring your device in before noon.</p>
+                        <p>Most common repairs like screen replacements or software issues are completed within 2-4
+                            hours. More complex hardware repairs may take 24-48 hours. We offer same-day service for
+                            many repairs when you bring your device in before noon.</p>
                     </div>
                 </div>
-                
+
                 <div class="accordion-item">
                     <div class="accordion-header">
                         Do you offer warranty on repairs?
                     </div>
                     <div class="accordion-content">
-                        <p>Yes! All our repairs come with a 30-day warranty on parts and labor. For certain repairs like screen replacements, we offer extended warranty options.</p>
+                        <p>Yes! All our repairs come with a 30-day warranty on parts and labor. For certain repairs like
+                            screen replacements, we offer extended warranty options.</p>
                     </div>
                 </div>
-                
+
                 <div class="accordion-item">
                     <div class="accordion-header">
                         Can you recover data from damaged devices?
                     </div>
                     <div class="accordion-content">
-                        <p>In most cases, yes. We have specialized tools and techniques to recover data from devices with physical damage, water damage, or software corruption. Success rates vary by situation, but we'll always give you an honest assessment before proceeding.</p>
+                        <p>In most cases, yes. We have specialized tools and techniques to recover data from devices
+                            with physical damage, water damage, or software corruption. Success rates vary by situation,
+                            but we'll always give you an honest assessment before proceeding.</p>
                     </div>
                 </div>
-                
+
                 <div class="accordion-item">
                     <div class="accordion-header">
                         Do you buy used devices?
                     </div>
                     <div class="accordion-content">
-                        <p>Yes, we purchase used smartphones, tablets, and laptops in good condition. Bring your device in for a free evaluation and competitive offer.</p>
+                        <p>Yes, we purchase used smartphones, tablets, and laptops in good condition. Bring your device
+                            in for a free evaluation and competitive offer.</p>
                     </div>
                 </div>
-                
+
                 <div class="accordion-item">
                     <div class="accordion-header">
                         What payment methods do you accept?
                     </div>
                     <div class="accordion-content">
-                        <p>We accept all major cash send, cash, credit cards and debit cards . Financing options are available for purchases over R2,000.</p>
+                        <p>We accept all major cash send, cash, credit cards and debit cards . Financing options are
+                            available for purchases over R2,000.</p>
                     </div>
                 </div>
             </div>
@@ -922,7 +1437,7 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul>
@@ -933,7 +1448,7 @@
                         <li><a href="#">Tech Support</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Products</h3>
                     <ul>
@@ -944,7 +1459,7 @@
                         <li><a href="#">Refurbished</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
@@ -956,22 +1471,36 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
-                <p>&copy; 2025 MaxTech Solutions. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2025 MaxTech Solutions. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
+        // Mobile Menu Toggle - Enhanced for Dropdown
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
-        
+
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
-        
+
+        // Toggle Dropdown on Mobile
+        const dropdownLi = document.querySelector('.dropdown');
+        if (dropdownLi) {
+            dropdownLi.addEventListener('click', function (e) {
+                // Only for mobile view check
+                if (window.innerWidth <= 768) {
+                    // e.preventDefault(); // Prevent jump if clicking the main tag
+                    this.classList.toggle('active');
+                }
+            });
+        }
+
+
         // Close menu when clicking a link
         const navLinks = document.querySelectorAll('nav ul li a');
         navLinks.forEach(link => {
@@ -979,15 +1508,15 @@
                 nav.classList.remove('active');
             });
         });
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 70,
@@ -996,15 +1525,15 @@
                 }
             });
         });
-        
+
         // Accordion functionality
         const accordionHeaders = document.querySelectorAll('.accordion-header');
-        
+
         accordionHeaders.forEach(header => {
             header.addEventListener('click', () => {
                 const accordionItem = header.parentElement;
                 const accordionContent = header.nextElementSibling;
-                
+
                 // Close all other open items
                 document.querySelectorAll('.accordion-content.show').forEach(openContent => {
                     if (openContent !== accordionContent) {
@@ -1012,46 +1541,186 @@
                         openContent.previousElementSibling.classList.remove('active');
                     }
                 });
-                
+
                 // Toggle current item
                 header.classList.toggle('active');
                 accordionContent.classList.toggle('show');
             });
         });
-        
+
         // Form submission
         const contactForm = document.getElementById('contactForm');
-        
+
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                
+
                 // Here you would typically send the form data to a server
                 alert('Thank you for your message! We will get back to you soon.');
                 this.reset();
             });
         }
-        
+
         // Animation on scroll
         const fadeElements = document.querySelectorAll('.fade-in');
-        
+
         const fadeInOnScroll = () => {
             fadeElements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-                
+
                 if (elementTop < windowHeight - 100) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
                 }
             });
         };
-        
+
         // Run once on page load
         fadeInOnScroll();
-        
+
         // Run on scroll
         window.addEventListener('scroll', fadeInOnScroll);
+
+        /* ----------------------------------------------------
+           NEW FEATURES JS
+        ---------------------------------------------------- */
+
+        // 1. WhatsApp Ordering
+        function orderOnWhatsapp(productName) {
+            const phoneNumber = "27684810116";
+            const text = `Hello MaxTech, I am interested in ordering: ${productName}`;
+            const encodedText = encodeURIComponent(text);
+            const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+            window.open(url, '_blank');
+        }
+
+        // 2. Product Filtering
+        function applyFilter(selectedCategory) {
+            const productCards = document.querySelectorAll('.product-card');
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+
+                if (selectedCategory === 'all' || category === selectedCategory) {
+                    card.style.display = 'block';
+                    // Re-trigger animation if needed
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Scroll to products section
+            const productsSection = document.getElementById('products');
+            if (productsSection) {
+                // Account for header height
+                const headerOffset = 80;
+                const elementPosition = productsSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            // Close mobile menu if open
+            const nav = document.querySelector('nav');
+            if (nav && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        };
+
+        // 3. Product Modal & Image Gallery
+        const modal = document.getElementById('productModal');
+        const closeModal = document.querySelector('.close-modal');
+        const modalMainImage = document.getElementById('modalMainImage');
+        const modalThumbnails = document.getElementById('modalThumbnails');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalWhatsappBtn = document.getElementById('modalWhatsappBtn');
+
+        function openProductModal(card) {
+            // Get data from attributes
+            const title = card.getAttribute('data-title');
+            const price = card.getAttribute('data-price');
+            const desc = card.getAttribute('data-desc');
+            const category = card.getAttribute('data-category');
+
+            // Image handling (can be single string or JSON array)
+            let rawImages = card.getAttribute('data-images');
+            let images = [];
+            try {
+                images = JSON.parse(rawImages || '[]');
+            } catch (e) {
+                // If not JSON, assume single image
+                const imgElement = card.querySelector('.product-img img');
+                if (imgElement) images = [imgElement.src];
+            }
+
+            // Populate Modal
+            modalTitle.textContent = title;
+            modalPrice.textContent = price;
+            modalDesc.textContent = desc;
+            modalCategory.textContent = category;
+
+            // Setup Gallery
+            setupGallery(images);
+
+            // Setup WhatsApp Button in Modal
+            modalWhatsappBtn.onclick = () => orderOnWhatsapp(title);
+
+            // Show Modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function setupGallery(images) {
+            modalThumbnails.innerHTML = '';
+
+            if (images.length > 0) {
+                // Set main image
+                modalMainImage.src = images[0];
+
+                // Create thumbnails
+                images.forEach((imgSrc, index) => {
+                    const thumb = document.createElement('img');
+                    thumb.src = imgSrc;
+                    thumb.classList.add('thumbnail');
+                    if (index === 0) thumb.classList.add('active');
+
+                    thumb.onclick = () => {
+                        modalMainImage.src = imgSrc;
+                        // Update active state
+                        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                        thumb.classList.add('active');
+                    };
+
+                    modalThumbnails.appendChild(thumb);
+                });
+            }
+        }
+
+        // Close Modal Logic
+        if (closeModal) {
+            closeModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        // Close on clicking outside content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
     </script>
 </body>
+
 </html>
